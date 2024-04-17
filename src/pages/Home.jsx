@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import CarListContainer from "../components/CarList";
+
 export default function Home() {
-    let [carList, setCarList] = useState([]);
-    let [makeList, setMakeList] = useState([]);
+    const [carList, setCarList] = useState([]);
+    const [makeList, setMakeList] = useState([]);
   
     // token for authorization
   
@@ -38,8 +39,6 @@ export default function Home() {
 
     return (
         <div>
-        <h1>Home</h1>
-        <p>Welcome to the home page</p>
         <CarListContainer carList={carList} makeList={makeList} />
         </div>
     );

@@ -5,32 +5,26 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-link {
+display: flex;
+justify-content: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 100px;
 }
 
 .card {
@@ -39,4 +33,61 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.homeHdr {
+  font-size: 3em;
+  font-weight: bold;
+  color: red;
+  font-family: Orbitron, sans-serif;
+}
+
+.tagLine {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Orbitron, sans-serif;
+}
+
+.carImg {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin: 20px;
+  border: gold solid 5px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.carImg:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 250px;
+  }
+
+  .header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-link {
+    dispaly: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
 }
