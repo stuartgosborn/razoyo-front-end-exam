@@ -13,7 +13,10 @@ export default function Header() {
 
                         <h1 className="homeHdr">Selleck Motors</h1>
                         </a>
-                        <p className="tagLine ">We&apos;ve Got the Goods</p>
+                        <a href="https://www.youtube.com/watch?v=NBmkbwwDsFo"style={{textDecoration: 'none'}}>
+
+                        <p className="tagLine " >We&apos;ve Got the Goods</p>
+                        </a>
                     </div>
                     <button
                         className="navbar-toggler home-link"

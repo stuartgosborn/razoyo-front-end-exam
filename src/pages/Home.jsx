@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from "react";
 import CarListContainer from "../components/CarList";
+import DropdownMenu from "../components/DropdownMenu";
 
 export default function Home() {
     const [carList, setCarList] = useState([]);
     const [makeList, setMakeList] = useState([]);
+    const [carListUrl, setCarListUrl] = useState(`https://exam.razoyo.com/api/cars`);
   
-    // token for authorization
+  
+    function handleMakeChange(urlParam) {
+      console.log("urlParam", urlParam);
+      setCarListUrl(urlParam);
+
+    }
   
     useEffect(() => {
       const token =
         "SFMyNTY.g2gDbQAAABI6OmZmZmY6MTY5LjI1NC4xLjFuBgCL8pDkjgFiAAFRgA.KM4kFCCoLzV8a-CfiwUfKaXKgBal2NT4Sp6iEL-id1U";
   
       // url to fetch car list
-      const carListUrl = `https://exam.razoyo.com/api/cars`;
   
       // make call to fetch car list
   
@@ -32,13 +38,14 @@ export default function Home() {
       } catch (error) {
         console.error("Error:", error);
       }
-    }, []);
+    }, [carListUrl]);
   
     console.log("carList", carList);
     console.log("makeList", makeList);
 
     return (
         <div>
+        <DropdownMenu makeList={makeList} handleMakeChange={handleMakeChange} />  
         <CarListContainer carList={carList} makeList={makeList} />
         </div>
     );

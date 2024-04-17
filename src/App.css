@@ -1,8 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  align-items: center;
+  align-content: center;
   
 }
 
@@ -44,7 +45,10 @@ color: white;
 main {
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 100px;
+  margin-top: 150px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
 }
 
 .card {
@@ -66,13 +70,15 @@ main {
   font-size: 1.5em;
   font-weight: bold;
   font-family: Orbitron, sans-serif;
+  color: white;
+  text-decoration: none;
 }
 
 .carImg {
   height: 300px;
   width: 300px;
   object-fit: cover;
-  margin: 20px;
+  margin: 50px;
   border: navy solid 2px;
   background-size: contain;
   display: flex;
