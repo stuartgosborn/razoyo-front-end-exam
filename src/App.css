@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
 .header {
@@ -16,9 +17,28 @@
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
 }
 
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-image:linear-gradient(to right, navy 0% ,  #89CFF0 100% );
+  color: white;
+}
+
 .home-link {
 display: flex;
 justify-content: right;
+color: white;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  font-size: larger;
 }
 
 main {
@@ -53,7 +73,7 @@ main {
   width: 300px;
   object-fit: cover;
   margin: 20px;
-  border: gold solid 5px;
+  border: navy solid 2px;
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -65,6 +85,7 @@ main {
 .carImg:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
+  filter: drop-shadow(0 0 2rem blue);
 }
 
 @media (max-width: 768px) {
@@ -73,6 +94,7 @@ main {
   }
 
   .header {
+    margin: 0;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -85,9 +107,9 @@ main {
     align-items: center;
   }
 
-  .home-link {
+  .container-fluid {
     dispaly: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 1rem;
   }
 }
