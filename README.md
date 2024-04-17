@@ -4,6 +4,14 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br>  
   [Link to License: MIT](https://opensource.org/licenses/MIT)
 
+  ## Links to Repository & Deployed Site
+
+  - GitHub Repo:  
+  https://github.com/stuartgosborn/razoyo-front-end-exam  
+
+  - Deployment:  
+  https://selleckmotors.netlify.app/
+
   ## Table of Contents
   [Description](#description)  
   [Wireframe](#wireframe)  
